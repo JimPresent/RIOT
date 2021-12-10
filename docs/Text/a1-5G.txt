@@ -1,0 +1,23 @@
+5G Enhanced Mobile Broadband
+
+5G is the fifth generation broadband and is meant to deliver a wireless technology that will be faster, more reliable.
+
+Increased availability and a massive network capacity expansion will be able to connect everyone and everything in the IoT (Internet of Things) range. 5G wireless technology uses radio frequencies like previous generations except they are higher and can transmit more information…. 
+
+5G is an investment for the next decade, and in previous mobile transitions, we've seen most of the big changes happening years after the first announcement. Take 4G, for instance. The first 4G phones in the US appeared in 2010, but the 4G applications that changed our world didn't appear until later. Snapchat came in 2012, and Uber became widespread in 2013. Video calls over LTE networks also became big in the US around 2013.
+
+The G in this 5G means it's a generation of wireless technology. While most generations have technically been defined by their data transmission speeds, each has also been marked by a break in encoding methods, or "air interfaces," that makes it incompatible with the previous generation.
+
+1G was analogue cellular. 2G technologies, such as CDMA, GSM, and TDMA, were the first generation of digital cellular technologies. 3G technologies, such as EVDO, HSPA, and UMTS, brought speeds from 200kbps to a few megabits per second. 4G technologies, such as WiMAX and LTE, were the next incompatible leap forward, and they are now scaling up to hundreds of megabits and even gigabit-level speeds.
+
+5G is also being trialled with artificial intelligence and holographic technologies, while it is also being tested for the world’s first 5G television. Other entertainment-related uses include the deployment of the new networks to provide coverage at festivals and sporting events.
+
+Transport is also set to be revolutionised, including developments in connected cars and the advent of autonomous transport. Autonomous vehicles are not the only technology that will critically use 5G, as remote surgery would also be made possible with doctors being able to control medical robots to perform procedures from anywhere in the world.
+
+While the consumer benefits of faster, reliable connection and lower latency are evident, 5G will also deliver some genuine benefits for business.
+
+5G will offer improved remote working possibilities for employees, in turn saving time and becoming more productive as there will be less need for travel.
+
+While 5G is not quite ready for use around the world, moves are being made to make this a reality. Once the technology is fully rolled out, it could dramatically change the way we both work and live.
+
+Author: John Downy
