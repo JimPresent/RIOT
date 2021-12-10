@@ -1,0 +1,14 @@
+Time crystal
+Taylor Kubota
+
+we are taking the devices that are meant to be the quantum computers of the future
+
+There is a huge global effort to engineer a computer capable of harnessing the power of quantum physics to carry out computations of unprecedented complexity. While formidable technological obstacles still stand in the way of creating such a quantum computer, today's early prototypes are still capable of remarkable feats.
+
+In research published Nov. 30 in Nature, a team of scientists from Stanford University, Google Quantum AI, the Max Planck Institute for Physics of Complex Systems and Oxford University detail their creation of a time crystal using Google's Sycamore quantum computing hardware.
+
+For the team, the excitement of their achievement lies not only in creating a new phase of matter but in opening up opportunities to explore new regimes in their field of condensed matter physics, which studies the novel phenomena and properties brought about by the collective interactions of many objects in a system. 
+
+"Time-crystals are a striking example of a new type of non-equilibrium quantum phase of matter," said Vedika Khemani, assistant professor of physics at Stanford and a senior author of the paper. "While much of our understanding of condensed matter physics is based on equilibrium systems, these new quantum devices are providing us a fascinating window into new non-equilibrium regimes in many-body physics."
+
+https://www.sciencedaily.com/releases/2021/11/211130130231.htm

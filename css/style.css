@@ -1,0 +1,754 @@
+/* 
+  ------------------
+  Table of Contents
+  ------------------
+  1.  Global
+  2.  Body
+  3.  Fonts
+  4.  Header
+  5.  Search
+  6.  Navigation
+  7.  Articles
+  8.  Adds (js slide show)
+  9.  Form
+  10. Footer
+  11. Media Queries
+  11.a Navigation
+  */
+
+/* 
+  ------------------
+  1. Global 
+  ------------------
+  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+/* 
+  ------------------
+  2. Body 
+  ------------------
+  */
+article, main, header, footer, nav, section, aside, div {
+  display: block;
+}
+body {
+  margin: auto;
+  max-width: 1280px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 
+  ------------------
+  3. Fonts
+  ------------------
+  */
+h1 {
+  font-size: 2.3rem;
+  font-style: italic;
+  padding-left: 15px;
+  letter-spacing: .25rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: black;
+}
+
+h4 {
+  color: black;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 4px;
+}
+h6 {
+  color: #00000075;
+  font-size: 0.7rem;
+  font-style: italic;
+  padding-left: 8px;
+}
+p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 3px;
+}
+
+hr {
+  margin-bottom: 2rem;
+  color: #6abfdb67;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+  ------------------
+  4. Header
+  ------------------
+  */
+.bannerhead {
+  background: linear-gradient(0deg,#134285,#FF34C1);
+  height: 120px;
+  color: #fff;
+  display: flex;
+ 
+}
+.bannerhead-item script#date {
+  font-size: 2rem;
+  display: none;
+  color: #13b1e7;
+}
+#date {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #eae8fc;
+  text-align: left;
+  padding: 1rem 0 1rem 0;
+  padding-left: 1rem;
+  line-height: 0%;
+}
+a {
+  text-decoration: none;
+}
+header p#loginRegister {
+  display: none;
+  
+}
+.bannerhead h1 {
+  color: #f8dede;
+}
+.bannerhead h2 {
+  color: #f8dede;
+  font-size: 1.3rem;
+  line-height: 50%;
+}
+.bannerhead p {
+  color: #fff;
+}
+header, section {
+  display: block;
+}
+img#riotMainLogo{
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 130px;
+}
+
+/* 
+  ------------------
+  5. Search tab-row
+  ------------------
+  */
+
+
+.searchbar img#searchIcon {
+  display: flex;
+  float: right;
+  width: 40px;
+}
+#search-form{
+  
+  background: linear-gradient(0deg,#134285,#12458b);
+  color: #fff;
+  padding: 3px;
+  border-radius: 4px;
+}
+fieldset {
+  float: right;
+  width: 5em;
+}
+#searchfield {
+  
+  background: #eee;
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: 4px 5px 4px 5px;
+  width: 5em;
+/* transition rule .3sec
+  */ 
+  transition: all .3s;
+}
+/* Add the focus 
+  */
+#searchfield:focus {
+  width: 23em;
+  background-color: #fff;
+  border-color: #74abff;
+
+  box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
+.searchbar {
+  
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(180deg,#134285,#2a64b6);
+}
+
+
+/* 
+  ------------------
+  6. Navigation
+  ------------------
+  */
+
+.navwrap {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  height: 48px;
+  width: 100%;
+  background-color: #212f54;
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+input#navToggle {
+  display: none;
+}
+ 
+input#navToggle ~ label {
+  position: relative;
+  padding: 0.25rem;
+  width: 2rem;
+  height: 1.25rem;
+  height: 2rem;
+}
+input#navToggle ~ label > span,
+input#navToggle ~ label > span::before,
+input#navToggle ~ label > span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: .75rem;
+  height: 0.125rem;
+  width: 1.75rem;
+  opacity: 1;
+  background: #fff;
+  transition: 0.14s ease-in-out;
+}
+input#navToggle ~ label > span::before {
+  top: -0.5rem;
+}
+  
+input#navToggle ~ label > span::after {
+  top: 0.5rem;
+}
+  
+#navToggle:checked ~ label > span {
+  width: 0;
+  background: rgba(18, 18, 18, 0);
+}
+ 
+#navToggle:checked ~ label > span::before {
+  transform: rotateZ(45deg);
+  top: 0;
+}
+#navToggle:checked ~ label > span::after {
+  transform: rotateZ(-45deg);
+  top: 0;
+}
+  
+#navToggle:checked ~ nav {
+  left: 0;
+}
+  
+nav {
+  position: absolute;
+  z-index: -1;
+  top: 3.0rem;
+  left: -110%;
+  width: 100%;
+  transition: 0.22s ease-in-out;
+}
+  
+nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: #a42e55de;
+  background-size: cover;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: .75rem 1rem;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,.5);
+  transition: 0.14s ease-in-out;
+}
+nav ul li ul li a {
+  padding: .5rem 1rem;
+}
+ 
+nav ul li a:hover {
+  color: #36bae6;
+  background: #e0e5eb;
+}
+  
+nav ul li:last-of-type::before {
+  content: "";
+  display: block;
+  padding: .5rem;
+}
+  
+nav .btn {
+  background: #fff;
+  border-bottom: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px #eeb80c;
+  color: #223054;
+  width: 40%;
+  padding: 0.25rem .6rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgb(19,177,231);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+nav .btn:hover {
+  background-color: #223054;
+  box-shadow: inset 0 0 5px #13b1e7;
+  color: #fff;
+}
+#loginButton {
+  font-size: 0.8rem;
+  color: rgb(236, 156, 236);
+
+}
+  
+
+/* 
+  ------------------
+  7. Articles
+  ------------------
+  */
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+#dd {
+  font-size: 0.8rem;
+}
+.tab {
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+.readMore {
+  color: rgb(19,177,231);
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-left: 8px;
+  font-weight: bold;
+}
+.artHome {
+  padding: .75rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+.mainMedia {
+  margin-left: 1rem;
+}
+.moreArtHome {
+  padding: .75rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+#moreMedia >h3{
+  padding-left: 1.5rem;
+}
+/* 
+  ------------------
+  8. Adverts slide show
+  ------------------
+  */
+
+#advertbox {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  
+}
+/* 
+  ------------------
+  hide other slide show img
+  ------------------
+  */
+Img#ss {
+  padding: 1rem;
+	display: none;
+}
+
+
+/* 
+  ------------------
+  9. form.html
+  ------------------
+  */
+
+
+#formTitle {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+}
+#formPage {
+  background: linear-gradient(180deg,#134285,#34c5ff);
+  width: 100%;
+  padding: 2rem;
+}
+form {
+  background: linear-gradient(0deg,#134285,#ff34c2a4);
+  color: #fff;
+  padding: 1rem 1rem 2rem;
+  border-radius: 1rem;
+    
+  }
+  
+form p {
+  font-weight: 300;
+  padding-bottom: 1rem;
+  }
+  
+form#contactForm {
+  margin: auto;
+  max-width: 350px;
+}
+
+.contactForm div {
+  margin-top: 1em;
+}
+
+.contactForm div:first-of-type {
+  margin-top: 0;
+}
+
+.contactForm label {
+  display: block;
+}
+
+.contactForm input, .contactForm textarea {
+  border: solid 1px #dedede;
+  border-radius: 4px;
+  color: #707070;
+  cursor: text;
+  font-size: 1rem;
+  max-width: 350px;
+  padding: .5rem;
+  width: 100%;
+}
+
+.contactForm textarea {
+  min-height: 100px;
+}
+
+.contactForm button {
+  
+  background: linear-gradient(0deg,#d634ffa4,#7b34ffa4);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem;
+  border:solid 0.5px #dbdee7;
+  text-shadow:1px 1px #223055;
+  min-width: 200px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contactForm button:hover {
+  background-color: #35b1e8;
+  color: #ffc107;
+  text-shadow:1px 1px #223055;
+}
+
+.contactForm i {
+  font-size: 200%;
+  padding-right: .5rem;
+}
+
+.contactForm input[type="submit"]:active {
+  box-shadow: 1px 1px 6px rgba(255,255,255,.6), 0px 0px 4px rgba(255,255,255,.8);
+}
+
+.contactForm .checks {
+  margin: .25em 0 1em .1em;
+}
+
+.contactForm input[type="checkbox"] + label {
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.contactForm .checks label {
+  display: inline-block;
+}
+
+.contactForm input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0 -1px;
+}
+
+input[type="checkbox"]:checked ~ span:before {
+  content: "\f14a";
+}
+
+.checks span:before {
+  display: inline-block;
+  box-sizing: border-box;
+  color: #13b1e7;
+  content: "\f0c8";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.3em;
+  margin: -3px 3px 0 0;
+  vertical-align: middle;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+  border: solid 1px #13b1e7;
+  box-shadow: 0 0 2px #0d92bf, 0px 0px 4px #0d92bf, 1px 1px 4px #13b1e7, 2px 2px 4px #13b1e7;
+  outline: none;
+}
+
+/* radio buttons */
+.contactForm div.radioBtns {
+  margin: 1em 0;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+}
+.radioBtns p {
+  padding-bottom: 0;
+  grid-column: span 3;
+}
+
+ input[type="radio"]:first-of-type {
+  margin-left: 0;
+}
+
+/* make the new radio button */
+.radioBtns span:before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  color: #13b1e7;
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin: -4px 3px 0 0;
+}
+
+.radioBtns label {
+  position: relative;
+}
+/* hide the default radio buttons */
+.radioBtns input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  
+}
+/* create the on (selected) state */
+input[type="radio"]:checked ~ span:before {
+  content: "\f192"; /* unicode for fa dot circle */
+}
+#submitButton {
+  padding-left: 3.5rem;
+  text-shadow:1px 1px #223055;
+}
+
+
+
+/* 
+  ------------------
+  10. Footer
+  ------------------
+  */
+
+footer {
+    color: #fff;
+    padding-top: 2rem;
+    height: 170px;
+    background: linear-gradient(180deg,#34c5ff,#3474ffe3);
+    text-align: center;
+    justify-content: center;
+  }
+  footer p{
+    padding-bottom: 1rem;
+    line-height: 80%;
+    text-shadow:1px 1px #647ab6;
+  }
+  #footlogin {
+    color: #1b677e;
+    text-align: center;
+    text-shadow: none;
+    padding-bottom: 2rem;
+  }
+  footer h2{
+    font-style: normal;
+  }
+/* 
+  ---------------------------
+  11. Media Query@700px min-width
+  ---------------------------
+  */
+  @media screen and (min-width: 700px) {
+    
+    #loginButton {
+      display: none;
+    }
+    header{
+      max-width: 1280px;
+    }
+    header#home.bannerhead {
+      height: 190px;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      flex-grow: 3;
+      flex-grow: 6;
+      flex-grow: 3; 
+    }
+    .bannerhead-item {
+      display: inline-block;
+      width: 33%;
+      
+    }
+    img#riotMainLogo {
+      padding: 2rem 0.5rem;
+      max-width: 160px;
+      padding-left: 10px;
+    }
+    header#home.bannerhead h1 {
+      color: #edf5f8;
+      text-align: center;
+      font-size: 4.3rem;
+      font-style: italic;
+      padding-top: 2rem;
+    }  
+    header#home.bannerhead h2 {
+      color: #d9ecf3;
+      font-size: 1.6rem;
+      text-align: center;
+      flex-basis: 200px;
+      flex: 60%;
+      
+    }  
+    header#home.bannerhead p#loginRegister {
+      color: #f0cdea;
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+      padding: 2rem 2rem 0 0;
+    }
+    #date {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #eae8fc;
+      text-align: center;
+      padding: 1rem 0 1rem 0;
+      line-height: 0%;
+    }
+    
+  /* 
+  ---------------------------
+    11.a Navigation
+    ---------------------------
+    */
+    
+    .nav_barp {
+      display: grid;
+      grid-template-columns: 100px minmax(auto, 1100px);
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    .navToggleLabel {
+      display: none;
+    }
+    nav {
+      position: initial;
+    }
+    nav ul {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+  
+    nav ul li a {
+      border-bottom: none;
+      cursor: pointer;
+      text-align: center;
+    }
+   
+    #nav_bar ul li:hover > ul {
+      display: block;
+    }
+  
+    nav ul li a:hover {
+      background: transparent;
+    }
+  
+    nav::after, nav ul li:last-of-type::before {
+      display: none;
+      padding: initial;
+    }
+  
+    nav .btn {
+      width: auto;
+      background: #13b1e7;
+      color: #fff;
+      letter-spacing: normal;
+      text-shadow: none;
+      box-shadow: none;
+    }
+  
+    nav.btn:hover {
+      box-shadow: inset 0 0 5px #13b1e7;
+      background-color: #223054;
+    }
+
+        
+  }
+  

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RIOT is a TUS college project by a second year student to design and create a news website with an emphasis on learning CSS Flex, Javascript and html5 combined.">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/slide_show.js"></script>
+    <title>Riot,  Register for updates and notifications, Randon Internet of Things</title>
+</head>
+<body>
+
+  
+  <header class="bannerhead" id="home">
+    <div class="bannerhead-item">
+        <a href="../index.html">
+            <img src="../images/newLogo_riot_header.png" id="riotMainLogo"
+            alt="Riot Logo Home Link">
+        </a>
+    </div>
+
+    <div class="bannerhead-item" style="flex-basis: 600px">
+      <a href="../index.html"><h1>RIOT</h1>
+        <h2>Random Internet of Things</h2>
+        </a>
+        <p id="date">
+          <script> document.write(new Date().toDateString())</script>
+      </p>
+    </div>
+
+    <div class="bannerhead-item">
+    <a href="../html/form.html">
+        <p id="loginRegister">Login | Register</p>
+    </a>
+</div>
+</header>
+<!-- ------------------- No Searchfield in form  -------------------------- -->
+  
+    
+
+    <section class="navwrap" id="navbar">
+
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel"><span></span></label>
+        <!-- anchor to login|Register link in footer -->
+        <!-- this function may be moved to header in larger screens -->
+        <!-- <a href="/html/form.html" id="loginButton">
+          <button>Login</button></a> -->
+        
+        <!-- search bar js function to be installed here -->
+        
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>  
+                
+                <li class="tab"><a href="../html/business.html">Business</a></li>
+                <li class="tab"><a href="../html/hardTech.html">Hard Tech</a></li>
+                <li class="tab"><a href="../html/softTech.html">Soft Tech</a></li>
+                <li class="tab"><a href="../html/startUps.html">Start Ups</a></li>
+                <li class="tab"><a href="../html/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main id="formPage">
+        <section id="formContainer">
+          <h2 id="formTitle">Register with RIOT</h2>
+            <form action="#" method="post" id="contactForm" class="contactForm">
+                <div>
+                  <label for="fullName">Your Name:</label>
+                  <input type="text" name="fullName" id="fullName" placeholder="Joe Bloggs" required>
+                </div>
+        
+                <div>
+                  <label for="phone">Phone:</label>
+                  <input type="tel" name="phone" id="phone" maxlength="12" placeholder="087-123-4567" required>
+                </div>
+        
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="joe@bloggs.com"required>
+                </div>
+        
+                <div class="radioBtns">
+                  <p>Preferred method of contact:</p>
+                  <label for="contactEmail">
+                    <input type="radio" name="contact" id="contactEmail" checked value="email">
+                    <span></span>
+                    Email
+                  </label>
+        
+                  <label for="contactTel">
+                    <input type="radio" name="contact" id="contactTel" value="phone">
+                    <span></span>
+                    Phone
+                  </label>
+        
+                  <label for="contactText">
+                    <input type="radio" name="contact" id="contactText" value="text">
+                    <span></span>
+                    Text
+                  </label>
+                </div>
+                <div class="radioBtns">
+                  <p>Preferences:</p>
+                  <label for="contactEmail">
+                    <input type="radio" name="preferences" id="iotNews" checked value="iotNews">
+                    <span></span>
+                    IoT News
+                  </label>
+        
+                  <label for="contactTel">
+                    <input type="radio" name="preferences" id="startUps" value="startUps">
+                    <span></span>
+                    Start-Ups
+                  </label>
+        
+                  <label for="contactText">
+                    <input type="radio" name="preferences" id="business" value="business">
+                    <span></span>
+                    Business
+                  </label>
+                </div>
+        
+                <div>
+                  <label for="msg">Your Comments or Questions welcome:</label>
+                  <textarea name="msg" id="msg"></textarea>
+                </div>
+        
+                <div class="checks">
+                  <input type="checkbox" name="newsletter" id="newsletter" unchecked>
+                  <span></span>
+                  <label for="newsletter">Tick here for RIOT notifications</label>
+                </div>
+                
+                <div id="submitButton">
+                  <button type="submit" value="Send Message" form="contactForm"><i class="submit"></i>Sign up!</button>
+                </div>
+              
+              </form>
+        </section>
+    <section>
+        
+   
+    </main>
+    
+
+    <footer>
+        <p>RIOT 2021</p>
+        <p>Random Internet of Things</p>
+        <p>Design by &#169;K00264014</p>
+    </footer>
+    
+</body>
+</html>

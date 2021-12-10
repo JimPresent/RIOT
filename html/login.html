@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RIOT is a TUS college project by a second year student to design and create a news website with an emphasis on learning CSS Flex, Javascript and html5 combined.">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/slide_show.js"></script>
+    <title>Riot,  Register for updates and notifications, Randon Internet of Things</title>
+</head>
+<body>
+
+  
+    <header class="bannerhead" id="home">
+      <div class="bannerhead-item">
+          <a href="../index.html">
+              <img src="../images/Riot_mainLogo_150x150px.png" id="riotMainLogo"
+              alt="Riot Logo Home Link">
+          </a>
+      </div>
+
+      <div class="bannerhead-item" style="flex-basis: 600px">
+          <h1>RIOT</h1>
+          <h2>Random Internet of Things</h2>
+      </div>
+
+      <div class="bannerhead-item">
+      <a href="../html/form.html">
+          <p id="loginRegister">Login | Register</p>
+      </a>
+      <a href="https://www.google.com/" target="blank">
+      <img src="../images/search.png" alt="search logo" id="searchIcon">
+      </a>
+  </div>
+  </header>
+    
+    
+
+    <section class="navwrap" id="navbar">
+
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel"><span></span></label>
+        <!-- anchor to login|Register link in footer -->
+        <!-- this function may be moved to header in larger screens -->
+        <a href="../html/form.html" id="loginButton">
+          <button>Login</button>
+          
+      </a>
+        <!-- search bar js function to be installed here -->
+        
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>  
+                
+                <li class="tab"><a href="../html/business.html">Business</a></li>
+                <li class="tab"><a href="../html/hardTech.html">Hard Tech</a></li>
+                <li class="tab"><a href="../html/softTech.html">Soft Tech</a></li>
+                <li class="tab"><a href="../html/startUps.html">Start Ups</a></li>
+                <li class="tab"><a href="../html/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main id="formPage">
+        <section id="formContainer">
+          <h2 id="formTitle">Login</h2>
+            <form action="#" method="post" id="contactForm" class="contactForm">
+                <div>
+                  <label for="fullName">Your Name:</label>
+                  <input type="text" name="fullName" id="fullName" placeholder="Joe Bloggs" required>
+                </div>
+        
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="joe@bloggs.com"required>
+                </div>
+        
+                <div id="submitButton">
+                  <button type="submit" value="Send Message" form="contactForm"><i class="submit"></i>Login</button>
+                </div>
+              
+              </form>
+        </section>
+   
+    </main>
+    
+
+    <footer>
+        <p>RIOT 2021</p>
+        <p>Random Internet of Things</p>
+        <p>Design by &#169;K00264014</p>
+    </footer>
+    
+</body>
+</html>

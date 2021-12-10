@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RIOT is a TUS college project by a second year student to design and create a news website with an emphasis on learning CSS Flex, Javascript and html5 combined.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/slide_show.js"></script>
+    <title>Riot, business, Randon Internet of Things</title>
+</head>
+
+<body>
+
+    <!------------------------
+        Header
+     ------------------------>
+    <header class="bannerhead" id="home">
+        <div class="bannerhead-item">
+            <a href="../index.html">
+                <img src="../images/newLogo_riot_header.png" id="riotMainLogo" alt="Riot Logo Home Link">
+            </a>
+        </div>
+
+        <div class="bannerhead-item" style="flex-basis: 600px">
+            <a href="../index.html"><h1>RIOT</h1>
+                <h2>Random Internet of Things</h2>
+                </a>
+
+            <p id="date">
+                <script> document.write(new Date().toDateString())</script>
+            </p>
+        </div>
+
+        <div class="bannerhead-item">
+            <a href="../html/form.html">
+                <p id="loginRegister">Login | Register</p>
+            </a>
+        </div>
+    </header>
+   <!------------------------
+        Search
+     ------------------------>
+    <section class="searchbar">
+        <img src="../images/search.png" alt="search logo" id="searchIcon">
+
+        <form action="" autocomplete="off" id="search-form">
+            <fieldset>
+                <!-- <legend>Enter a search term</legend> -->
+                <label for="searchfield">
+                    <input type="search" name="searchfield" id="searchfield" placeholder="Search...">
+                </label>
+            </fieldset>
+        </form>
+    </section>
+
+   
+    <!------------------------
+        Navigation
+     ------------------------>
+    <section class="navwrap" id="navbar">
+
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggleLabel"><span></span></label>
+        
+        <a href="../html/form.html" id="loginButton">
+            <p id="loginButton">Login | Register</p>
+        </a>
+        
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+
+                <li class="tab"><a href="../html/business.html">Business</a></li>
+                <li class="tab"><a href="../html/hardTech.html">Hard Tech</a></li>
+                <li class="tab"><a href="../html/softTech.html">Soft Tech</a></li>
+                <li class="tab"><a href="../html/startUps.html">Start Ups</a></li>
+                <li class="tab"><a href="../html/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <!------------------------
+        Articles Top
+        ------------------------>
+        <section class="pages">
+            <ul class="artHome">
+                <li>
+                    <img src="../images/art_1.jpg" alt="fingers touching" class="artHero" >
+                    <h3>The AI Revolution</h3>
+                    <h4><q>a matter of time until AI opportunities accelerate through rapid adoption</q> </h4>
+                    <h5 class="author"><a
+                            href="https://www.forbes.com/sites/forbestechcouncil/2021/08/25/the-ai-revolution-is-happening-now/"
+                            class="readMore" target="blank">Author: Jim Present</a></h5>
+                            <h6>January 1, 2021</h6>
+                    <p>AI experienced a major boom in the healthcare sector since the Covid-19 pandemic. However, it was
+                        not a result of overnight changes, as the industry was increasingly turning tech-focused in the
+                        days preceding it.</p>
+                    <!------------------------
+                    Video feature embedded
+                    ------------------------>
+                    <iframe id="video" src="https://www.youtube.com/embed/bLg6big81Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <p>Artificial intelligence continues to find widespread application in telemedicine, ranging from
+                        preliminary diagnosis to formulating a treatment plan. AI platforms can utilize a range of
+                        technologies such as data mining, image processing and predictive modeling to discover the best
+                        route to a long and healthy life.
+                    </p>
+
+                    <a href="https://www.intel.ie" target="_blank" rel="noopener noreferrer"><img src="../images/add_image_stretch_600x200_intel1.png" id="artInsert" alt="intel logo clickable add"></a>
+
+                    <p>AI marketplaces can satisfy this need by allowing companies to buy or sell AI-powered products and services. These marketplaces can accelerate the speed of innovation in AI and bring the benefits of the AI revolution to the current generation. 
+                    </p>
+                    <a href="../index.html" class="readMore">&#60;back</a>
+
+
+                </li>
+            </ul>
+        </section>
+
+        <!------------------------
+        Adverts via js file
+        ------------------------>
+        <section id="advertbox">
+            <div id="divAdds">
+    
+                <img id="slide" src="../images/add_image_long_cocacola1.png" alt="">
+                <div id="slides">
+                    <img src="../images/add_image_long_nike1.png" id="ss" alt="advert 1">
+                    <img src="../images/add_image_long_02b.png" id="ss" alt="advert 2">
+                    <img src="../images/add_image_long_gravity1.png" id="ss" alt="advert 3">
+                    <img src="../images/add_image_long_pepsi1.png" id="ss" alt="advert 4">
+                    <img src="../images/add_image_long_bestprice1.png" id="ss" alt="advert 5">
+                </div>
+            </div>
+        </section>
+
+        <!------------------------
+        Articles Bottom
+        ------------------------>
+        <section id="moreMedia">
+            <hr>
+            <h3>Hard Tech</h3>
+            <ul class="moreArtHome">
+
+                <li>
+                    <img src="../images/art_1.jpg" class="moreHero" alt="fingers touching">
+                    <h3>The Article Title</h3>
+                    <h4>A short line defining article content</h4>
+                    <h5 class="author"><a href="#" class="readMore">Author: Joe Bloggs</a></h5>
+                    <p>The First lines of the article will be her to give the reader some insight into the article.
+                        Usually the first sentence...<a href="../html/art1.html" class="readMore">Read more</a></p>
+                </li>
+                
+                <li>
+                    <img src="../images/art_1.jpg" class="moreHero" alt="fingers touching">
+                    <h3>The Article Title</h3>
+                    <h4>A short line defining article content</h4>
+                    <h5 class="author"><a href="#" class="readMore">Author: Joe Bloggs</a></h5>
+                    <p>The First lines of the article will be her to give the reader some insight into the article.
+                        Usually the first sentence...<a href="#" class="readMore">Read more</a></p>
+                </li>
+                
+                <li>
+                    <img src="../images/art_1.jpg" class="moreHero" alt="fingers touching">
+                    <h3>The Article Title</h3>
+                    <h4>A short line defining article content</h4>
+                    <h5 class="author"><a href="#" class="readMore">Author: Joe Bloggs</a></h5>
+                    <p>The First lines of the article will be her to give the reader some insight into the article.
+                        Usually the first sentence...<a href="#" class="readMore">Read more</a></p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!------------------------
+    Footer
+    ------------------------->
+    <footer>
+        <a href="../index.html">
+            <h2>RIOT 2021</h2>
+        </a>
+        <p>Random Internet of Things</p>
+        <p>Design by &#169;K00264014</p>
+        <a href="../html/form.html" id="footlogin">
+            <p>Login | Register</p>
+        </a>
+    </footer>
+</body>
+
+</html>
